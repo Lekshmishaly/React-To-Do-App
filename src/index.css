@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background-color: hsla(67, 49%, 76%, 0.927);
+  font-family: 'Roboto', sans-serif;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.background-image {
+  background-image: url(./assets/doodle-travel.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 510px; 
+  height: 100%; 
+  padding: 20px; 
+  border-radius: 20px; 
+  position: relative;
+  top: -20px; 
+  left: -20px; 
+  z-index: 0; 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
+}
+
+.todo-container {
+  width: 450px;
+  background: hsl(157, 63%, 19%);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure the container is above the background */
+}
+
+h1 {
+  margin: 0 0 20px;
+  color: hsla(67, 49%, 76%, 0.927);
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.input-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* For input fields */
+.input-section input {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: hsla(67, 59%, 80%, 0.997);
+  color: #1a0d0ded;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+input::placeholder {
+  color: #0f0e0eb3;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(158, 44%, 25%, 0.807);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  color: hsl(69, 44%, 69%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ul li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: hsl(73, 100%, 32%);
+}
+
+.delete-btn {
+  background-color: hsla(68, 100%, 27%, 0.607);
+}
+
+.edit-btn:hover {
+  background-color: #1eacff;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+button[type="button"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: hwb(66 26% 38% / 0.976);
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.​⬤);
+}
